@@ -17,7 +17,7 @@ function prepare () {
     fi
 
     # clone
-    git clone git@github.com:shajunxing/quickjs-ffi.git $CACHE_QUICKJS_FFI_PATH
+    git clone https://github.com/695137400/quickjs-ffi.git $CACHE_QUICKJS_FFI_PATH
     cp patched-quickjs-ffi-Makefile $CACHE_QUICKJS_FFI_PATH/Makefile
     echo prepare $PACKAGE_NAME $PACKAGE_VER
 }
