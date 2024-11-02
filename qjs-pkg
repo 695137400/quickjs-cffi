@@ -29,9 +29,9 @@ function build () {
     local LOCAL_PACKAGE_PATH=$3
 
     # setup python venv
-    python -m venv venv
+    ./venv/bin/python -m venv venv
     source venv/bin/activate
-    pip install -r requirements.txt
+    ./venv/bin/pip install -r requirements.txt
     deactivate
 
     # build quickjs-ffi
